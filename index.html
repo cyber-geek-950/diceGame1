@@ -5,20 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
-    <title>Dice Game - 1 Player</title>
+    <title>Dice Game - 2 Player</title>
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <p id="reset"><a href="#">start again</a></p> 
+       
+        <div class="playerOne">
             <h1>Player 1</h1>
-            <p id="number"></p>
-            <p id="win"></p>
-            <p id="lose"></p>
-            <img src="./img/dice1.png" alt="Die 1" class="die" id="dice1">
-            <button class="btn"><a href="#">Roll</a></button>
+            <h1 id="playerScore">0</h1>
+            <div class="scoreBoard">
+                <p>Current</p>
+                <p id="playerOneCurrentScore">0</p>
+            </div>        
+            <div class="resets">
+                <h3 id="newGame"><a href="#">New Game</a></h3>
+                <img src="./img/dice1.png" alt="Dice">
+                <h3 id="rollDice"><a href="#">Roll Dice</a></h3>
+                <h3 id="hold"><a href="#">Hold</a></h3>
+            </div>    
         </div>
-    </div>
+
+        <div class="playerTwo">
+            <h1>Player 2</h1>
+            <h1 id="playerScore">0</h1>
+            <div class="scoreBoard">
+                <p>current</p>
+                <p id="playerTwoCurrentScore">0</p>
+            </div>
+        </div>
+    
+    </div><!-- END CONTAINER -->
     <script src="script.js"></script>
 </body>
 </html>

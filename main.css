@@ -17,53 +17,64 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
-}
-
-h1 {
-    color: #777;
-}
-
-.card {
-    border: 1px solid #f9f9f9;
-    height: 600px;
-    width: 260px;
-    padding: 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.playerOne {
     background-color: #fff;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 33px 14px rgba(0,0,0,0.19);
-    -moz-box-shadow: 0px 0px 33px 14px rgba(0,0,0,0.19);
-    box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.19);
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    position: relative;
 }
 
-#reset {
+.playerTwo {
+    background-color: #999;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.playerOne h1, 
+.playerTwo h1 {
+   margin-top: 4rem;
+   font-weight: 300;
+}
+
+.scoreBoard {
+    position: absolute;
+    bottom: 10%;
+    right: 33%;
+    background-color: #d9d9d9;
+    padding: 20px 30px;
+    color: #fff;
+}
+
+.resets {
+    position: absolute;
+    top: 30%;
+    left: 83%;
+    z-index: 5;
+}
+
+/* img,
+#rollDice,
+#hold {
     display: none;
-    background-color: #777;
-    padding: 15px 30px;
-    border-radius: 5px;
+} */
+
+img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
-#reset a {
+h3 {
+    margin-bottom: 20px;
+}
+
+h3 a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
 }
-
-
-.btn {
-    padding: 10px 30px;
-    background: linear-gradient(90deg, rgb(100, 145, 214) 0%, rgb(67, 240, 199) 100%);
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 10px 10px -10px rgba(0,0,0, .7);
-}
-
-.btn a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-
-
